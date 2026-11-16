@@ -55,11 +55,11 @@ func (i *InstantLaunchesAPI) PullItems(ctx context.Context) ([]map[string]interf
 	resp, err := httpClient.Do(req)
 	if err != nil {
 		if resp != nil {
-			resp.Body.Close()
+			_ = resp.Body.Close()
 		}
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	msg, err := io.ReadAll(resp.Body)
 	if err != nil {
