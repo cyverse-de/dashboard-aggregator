@@ -3,11 +3,11 @@ module github.com/cyverse-de/dashboard-aggregator
 go 1.27
 
 require (
-	github.com/cyverse-de/go-mod/cfg v0.0.3
-	github.com/cyverse-de/go-mod/httperror v0.0.2
-	github.com/cyverse-de/go-mod/logging v0.0.4
-	github.com/cyverse-de/go-mod/otelutils v0.0.6
-	github.com/doug-martin/goqu/v9 v9.25.0
+	github.com/cyverse-de/go-mod/cfg v0.0.4
+	github.com/cyverse-de/go-mod/httperror v0.0.3
+	github.com/cyverse-de/go-mod/logging v0.0.5
+	github.com/cyverse-de/go-mod/otelutils v0.0.7
+	github.com/doug-martin/goqu/v9 v9.27.0
 	github.com/guregu/null v4.0.0+incompatible
 	github.com/jmoiron/sqlx v1.4.0
 	github.com/knadh/koanf v1.5.0
@@ -31,7 +31,7 @@ require (
 	github.com/go-logr/logr v1.4.4 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/google/uuid v1.6.0 // indirect
-	github.com/grpc-ecosystem/grpc-gateway/v2 v2.33.0 // indirect
+	github.com/grpc-ecosystem/grpc-gateway/v2 v2.34.0 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/labstack/gommon v0.5.0 // indirect
 	github.com/magiconair/properties v1.18.13 // indirect
@@ -54,12 +54,12 @@ require (
 	go.opentelemetry.io/otel/trace v1.47.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.11.1 // indirect
 	golang.org/x/crypto v0.59.0 // indirect
-	golang.org/x/net v0.62.0 // indirect
+	golang.org/x/net v0.63.0 // indirect
 	golang.org/x/sys v0.50.0 // indirect
 	golang.org/x/text v0.44.0 // indirect
 	golang.org/x/time v0.16.0 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20261116203732-fd2c7689a808 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20261116203732-fd2c7689a808 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20261118221215-c8830f628b3f // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20261118221215-c8830f628b3f // indirect
 	google.golang.org/grpc v1.85.0 // indirect
 	google.golang.org/protobuf v1.36.12 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
