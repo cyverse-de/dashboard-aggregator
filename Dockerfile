@@ -1,4 +1,4 @@
-FROM golang:1.19 as build-root
+FROM golang:1.27 as build-root
 
 WORKDIR /go/src/github.com/cyverse-de/dashboard-aggregator
 COPY . .

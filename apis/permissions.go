@@ -63,7 +63,7 @@ func GetGroupID(ctx context.Context, config *config.ServiceConfiguration) (*stri
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	if resp.StatusCode != http.StatusOK {
 		return nil, errors.New("status code was not 200")
@@ -97,7 +97,7 @@ func (p *PermissionsAPI) GetPublicIDS(ctx context.Context, publicGroupID *string
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 	if resp.StatusCode != http.StatusOK {
 		return nil, errors.New("status code was not 200")
 	}

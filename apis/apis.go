@@ -82,7 +82,7 @@ func (a *AnalysisAPI) RunningAnalyses(ctx context.Context, username string, limi
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	log.Debugf("done getting running analyses from %s", fullURL.String())
 
@@ -142,7 +142,7 @@ func (a *AnalysisAPI) RecentAnalyses(ctx context.Context, username string, limit
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	log.Debugf("done getting recent analyses from %s", fullURL.String())
 

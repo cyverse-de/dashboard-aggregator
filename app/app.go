@@ -13,6 +13,7 @@ import (
 	"github.com/cyverse-de/go-mod/httperror"
 	"github.com/cyverse-de/go-mod/logging"
 	"github.com/labstack/echo/v4"
+	//nolint:staticcheck // TODO: migrate to github.com/labstack/echo-otel/v4; deferred because span names/attributes differ.
 	"go.opentelemetry.io/contrib/instrumentation/github.com/labstack/echo/otelecho"
 	"go.opentelemetry.io/otel"
 )
